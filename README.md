@@ -1,2 +1,2 @@
-# ARTEMIS-Engine-
+# ARTEMIS-Engine
  this is a desktop management dashboard for a company that handles emergency medical rescues, evacuations, and dispatch tracking for insured members. I applied strict Object-Oriented Design principles to keep the frontend and backend decoupled, organized, and easy to scale. The system features a reliable SQLite database backend to securely manage member profiles, log operations, and track live emergency tickets. I also mapped the entire emergency lifecycle within a Java UI, tracking a user's distress trigger all the way through to team deployment and resolution.
