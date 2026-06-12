@@ -1,0 +1,339 @@
+/* --- GLOBAL (GHOST PROTOCOL - NUCLEAR OVERRIDE) --- */
+.root {
+    /* Fades from deep dark slate to a rich, dark violet */
+    -fx-base: #111827;
+    -fx-background: linear-gradient(to bottom right, #111827, #2E1065);
+    -fx-font-family: "Segoe UI", "Open Sans", sans-serif;
+}
+
+/* --- TYPOGRAPHY COLOR INJECTIONS --- */
+.title-text {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: linear-gradient(to right, #8B5CF6, #38BDF8);
+    /* Indigo to Cyan gradient! */
+}
+
+.subtitle-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #A78BFA;
+    /* Light purple instead of gray */
+    -fx-padding: 0 0 10 0;
+}
+
+/* --- THE "CARD" COMPONENT (Now with sleek indigo borders) --- */
+.surface-card {
+    -fx-background-color: #1F2937;
+    /* Solid dark gray */
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #6D28D9;
+    /* Matches the new purple theme */
+    -fx-border-width: 1 1 3 1;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 15, 0, 0, 5);
+}
+
+/* --- LAYOUT BARS --- */
+.sidebar {
+    -fx-background-color: #111827;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-border-color: transparent #374151 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+}
+
+.top-bar {
+    -fx-background-color: #1F2937;
+    -fx-padding: 15 25;
+    -fx-spacing: 20;
+    -fx-border-color: transparent transparent #374151 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* --- SIDEBAR BUTTONS (Sleek & Transparent) --- */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9CA3AF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 15;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover,
+.sidebar-button:focused {
+    -fx-background-color: #1F2937;
+    -fx-text-fill: #8B5CF6;
+    -fx-background-radius: 6;
+}
+
+/* --- ACTION BUTTONS --- */
+.button-primary {
+    -fx-background-color: #8B5CF6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: #7C3AED;
+}
+
+/* --- INPUT FIELDS & FIXING THE BROKEN DROPDOWNS --- */
+.text-field {
+    -fx-background-color: #111827;
+    -fx-text-fill: #F3F4F6;
+    -fx-prompt-text-fill: #6B7280;
+    -fx-border-color: #4B5563;
+    -fx-border-radius: 4;
+    -fx-padding: 8 10;
+}
+
+/* --- BULLETPROOF COMBOBOX FIX --- */
+.combo-box {
+    -fx-background-color: #1F2937;
+    -fx-border-color: #4B5563;
+    -fx-border-radius: 4;
+}
+
+/* Forces the text area of the CLOSED box to be dark */
+.combo-box>.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F3F4F6;
+}
+
+/* The popup list styling */
+.combo-box-popup .list-view {
+    -fx-background-color: #1F2937;
+    -fx-border-color: #8B5CF6;
+    -fx-border-width: 1;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F3F4F6;
+}
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #8B5CF6;
+    -fx-text-fill: white;
+}
+
+.list-view,
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F3F4F6;
+}
+
+.list-cell:filled:selected,
+.list-cell:filled:hover {
+    -fx-background-color: #8B5CF6;
+    -fx-text-fill: white;
+}
+
+/* --- TABLEVIEW HIGH-CONTRAST OVERHAUL --- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #4B5563;
+    -fx-border-radius: 4;
+}
+
+.table-view .column-header-background,
+.table-view .column-header {
+    -fx-background-color: #111827;
+    -fx-border-color: transparent #374151 #8B5CF6 transparent;
+    -fx-border-width: 0 1 2 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #A78BFA;
+    /* Light purple for table headers */
+    -fx-font-weight: 800;
+}
+
+.table-row-cell {
+    -fx-background-color: #1F2937;
+    -fx-border-color: transparent transparent #374151 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #172033;
+    /* Subtle zebra striping */
+}
+
+.table-row-cell .text {
+    -fx-fill: #F3F4F6;
+    /* Forces table data text to white */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #8B5CF6;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+/* --- LOGIN BRANDING PANEL (Neon Purple/Magenta Intensity) --- */
+.login-branding-panel {
+    /* Much brighter, higher contrast neon purple to magenta */
+    -fx-background-color: linear-gradient(to bottom right, #6D28D9, #D946EF);
+}
+
+.login-branding-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #111827;
+    /* Pure Dark/Black */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.login-branding-subtitle {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #111827;
+    /* Pure Dark/Black */
+}
+
+/* --- TACTICAL ACTION BUTTONS (Green & Red) --- */
+.button-success {
+    -fx-background-color: #10B981;
+    /* Emerald Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button-success:hover {
+    -fx-background-color: #059669;
+}
+
+.button-danger {
+    -fx-background-color: #EF4444;
+    /* Alert Red */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button-danger:hover {
+    -fx-background-color: #DC2626;
+}
+
+/* --- FIX FOR TEXT AREA (Makes placeholder readable) --- */
+.text-area {
+    -fx-background-color: #111827;
+    -fx-border-color: #4B5563;
+    -fx-border-radius: 4;
+}
+
+.text-area .content {
+    -fx-background-color: #111827;
+}
+
+.text-area:focused {
+    -fx-border-color: #8B5CF6;
+}
+
+/* This targets the invisible prompt text */
+.text-area *.text {
+    -fx-fill: #F3F4F6;
+}
+
+/* --- ACTIVE MISSION STAT COLORS --- */
+.stat-total {
+    -fx-text-fill: #38BDF8;
+    /* Cyan */
+    -fx-font-weight: bold;
+}
+
+.stat-critical {
+    -fx-text-fill: #EF4444;
+    /* Red */
+    -fx-font-weight: bold;
+}
+
+.stat-elevated {
+    -fx-text-fill: #F59E0B;
+    /* Amber/Yellow */
+    -fx-font-weight: bold;
+}
+
+/* --- SURGICAL TEXT COLOR FIXES --- */
+
+/* Fixes Login placeholders (username/password) and typed text */
+.text-field,
+.password-field {
+    -fx-prompt-text-fill: #9CA3AF;
+    /* Muted light gray */
+    -fx-text-fill: #FFFFFF;
+    /* Pure white */
+}
+
+/* Fixes instructions in Dispatch Center & subheadings in Dossier/Itinerary */
+.white-subtext {
+    -fx-text-fill: #F3F4F6;
+    /* Crisp white */
+}
+
+/* Fixes Error Messages */
+.error-message {
+    -fx-text-fill: #EF4444;
+    /* High-visibility Red */
+    -fx-font-weight: bold;
+}
+
+/* --- SPECIAL ACTION BUTTONS --- */
+.button-audit {
+    -fx-background-color: #D946EF;
+    /* Neon Magenta */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button-audit:hover {
+    -fx-background-color: #C026D3;
+}
+
+.button-track {
+    -fx-background-color: #0EA5E9;
+    /* Electric Blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button-track:hover {
+    -fx-background-color: #0284C7;
+}
+
+/* --- TACTICAL RADAR HEADING --- */
+.radar-heading {
+    -fx-font-size: 28px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #10B981;
+    /* Sonar Green to match the map */
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.4), 10, 0, 0, 0);
+    -fx-letter-spacing: 2px;
+    -fx-padding: 0 0 20 0;
+}
